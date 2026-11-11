@@ -7,13 +7,11 @@
   "personal_signing_material_included": false,
   "files": {
     ".gitignore": "9b3c043a41a09291b0f3aca40fed28c7ee5e0e0264bbc05588d6d1a4f2154ba0",
-    "docs/ADAPTATIONS.md": "bf4e9ffc2821754c401e13d1a96d245f4fdfc2a2e18e019585417dcc0bcffdae",
-    "docs/BUILD_AND_UPDATE.md": "1d16e738272968bb06b88d3bc956ab6b2991d0da46b93fe3ea340b6cba6e252e",
-    "docs/CHANGELOG.md": "6d008f84b444c1ced50665a0fa681aaa5bbd780deae86e39c5c5aae7930c3ef5",
-    "docs/LESSONS_LEARNED.md": "a2b9f27251ebdc2edf1e66ab157ac6c6592e7bab6eefedcf95ed3fa63f68c88f",
-    "docs/PROCESS.md": "3439f503eb87c0f3a11503eda47d77e6be89f9b9747893c668c8749aa9756ea9",
-    "docs/SIGNING_SOURCE.md": "66ea0082f6ce42e8dbe3c04a03b33c54d8dd6b3ff8d90bfebca4ae679451990a",
-    "docs/VALIDATION.md": "802da0fb401269733fe6eea13bc9dd57866571e804f7b30375c9171277ec6769",
+    "docs/BUILD_AND_UPDATE.md": "048575283e475f452099279f278a9ad557a695f58cf7cf7ba85fce077eef64a5",
+    "docs/COMPATIBILITY.md": "bf88a4f485c023e6061e69a4a022e071b80da3ac9cc14ab7dfc658b7dd11a3f4",
+    "docs/FEATURES.md": "ca2aff19b4c257cd8c0de71f790288d858675cb0e80e92d9272b4adb03219897",
+    "docs/SIGNING_SOURCE.md": "f89971553b79dad372f2a2af36732cec86e943d4f120d872eac1ff7057fae55a",
+    "docs/USAGE.md": "2fae15e5b121de99bc2a4b35f57a7f8e5fa02ac730aa735875d55fe80574092c",
     "LICENSE": "455efd1c3c7171a3bee96e84c5725717a8fda3735e16c7512e6bce60687e4354",
     "licenses/iloader-BRANDING.txt": "e7d3bca8e0e58ab023f78f09a901554c4565665e54a237bcd29a679cf067879a",
     "licenses/iloader-MIT.txt": "b9767efbfd95bcedb96d9d9d21cd3bbd4dc9366cd1c0be585b2c948e4eef397e",
@@ -21,7 +19,7 @@
     "licenses/MacNativeGames-MIT.txt": "a035ee21f927d2247f30bedc8964c95b3a4d794f76c78cad178b68731815a79a",
     "licenses/macos-on-ios-MIT.txt": "658b1522348197463f35b2dee7137d02c1937180fca36bf7fee0fa06c181b42c",
     "packages/iloader-extensionkit-signing-source.zip": "daeebc2f3306b992fe6135a1e6d0f6092a1b0e1123d1044bee3530eac21fbba1",
-    "README.md": "745f8bf84448b08969d239cd9487e4bdb03df239add3d895e1c5faf7bbc993d6",
+    "README.md": "9ec1ce5f2ce3cd876df514cda37ccb6a8f57669373b059242ead02f9674c1a7c",
     "reference/PortHDRLegacyGate.inc": "df77f06cc8811517358d7c1512dbbb97f4d23c084192c18296c4b21773760e8e",
     "src/AppKit.m": "a1db3d48b811aa95e828262bf1c5e6bac2acf5cf26938325b747f12eb06b7cee",
     "src/AppKit_Flat.m": "9e7dbc78354b933ed211e17fb67399be98a1a6f23118eb8ccb61a502be0174f9",
@@ -60,8 +58,6 @@
     "tools/verify_archive.py": "dfac759e7443fab0c276ad8577419ed1b364f45c7d8b689f461ad4a1681d63c8",
     "update-kit-v21/Frameworks/libShim_AppKit.dylib": "705861f5bc3ece924c2b491c35ba2de896f72131c30bdadedac7760c22f4a85e",
     "update-kit-v21/Frameworks/libShim_CoreGraphics.dylib": "b80a93d886c15e078bfbe34a20a0ac9f9ee53f1c4db038cad536d16b1752c561",
-    "update-kit-v21/manifest.json": "7d4380b8c4c902ae54ac6ce5da667785a0afcd0f5e061b43c04127693c182d84",
-    "verification/archive-tool-checks.json": "6527d35aecacbaa8689dbda7101702d8fd5deda0b3a6973a2fc442a28fbd2ed5",
-    "verification/device-acceptance.json": "041e349b593027ba598d71b81b56af1a0e1d7c725dfb1425af80f3f6b22cb287"
+    "update-kit-v21/manifest.json": "7d4380b8c4c902ae54ac6ce5da667785a0afcd0f5e061b43c04127693c182d84"
   }
 }
