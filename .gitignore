@@ -1,0 +1,17 @@
+private/
+build/
+__pycache__/
+*.pyc
+*.ipa
+*.nsp
+*.xci
+*.archive
+*.p12
+*.pfx
+*.mobileprovision
+*.key
+Payload/
+signing-checkpoints/
+pairing/
+node_modules/
+target/

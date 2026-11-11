@@ -1,2 +1,40 @@
-# cyberpunk-ipados-adaptation
-Cyberpunk 2077 Mac→iPadOS adaptation archive. Tested on 11-inch iPad Pro M5 / iPadOS 27.0.1. Touch controls, resolution modes and verified HDR. Source and compatibility modules only.
+# 赛博朋克 2077 · iPadOS 适配档案
+
+《赛博朋克 2077》Mac 2.5.0 在 **11 英寸 iPad Pro M5、12GB 内存、512GB、iPadOS 27.0.1** 上的本地运行适配记录。当前归档里程碑是 **v21 / 2026111103，HDR 输出路径已真机确认**。公开日期为 2026-11-11。
+
+复用 macos-on-ios 的 Mach-O 平台适配和 UIKit 兼容层，在 Windows 交叉构建并用个人开发签名安装。游戏 ARM64 CPU 代码沿用用户自己的 Mac 版，运行时由 iPad 执行。公开档案包含适配源码、工具、纯兼容模块、经验与脱敏验收结果。
+
+## 已完成的改进
+
+| 项目 | 当前结果 |
+| --- | --- |
+| 主屏名称 | 赛博朋克 2077 |
+| 图标 | 本机使用原 Mac 包图标转换，公开档案提供处理说明 |
+| 虚拟手柄 | 塞尔达式单画布，双摇杆、方向键、动作键、K1/K2 自定义快捷键 |
+| 布局 | 拖动位置、大小、透明度、固定/浮动摇杆、保存/取消/恢复默认、显示开关 |
+| 跟手 | v12 避免安全区通知误清空，v13 改善 UIKit 事件服务和控件提交，用户确认跟手和短按可用 |
+| iPad 体感 | Core Motion → 虚拟右摇杆，常开/瞄准、灵敏度、校准、反转、横纵独立倍率 |
+| 分辨率菜单 | 1210×834、1815×1251、1920×1324、2420×1668 |
+| 超分 | 原游戏 MetalFX Temporal 有运行 HUD 证据，内部尺寸与输出尺寸分别记录 |
+| HDR | v21 实际取帧39次均为 EDR开启、RGBA16Float、PQ色彩空间，用户反馈画面成功 |
+| 签名 | iLoader 的 ExtensionKit 父子包处理、各自真实 profile、仅签名检查点和独立安装 |
+| 更新 | 兼容模块与约79.7GB游戏资源分离，同标识覆盖，更新前备份存档和偏好 |
+
+本次 HDR 采样的实际输出为 **1815×1251**。2420×1668 是屏幕原生尺寸及可选输出档位，完整四档的 HUD 对照仍待逐项验证。设备最高刷新率为120Hz，游戏实帧、超分输出帧和插帧帧数应分别测量。v21 保留诊断采样，属于已验证里程碑，覆盖范围见验收表。
+
+## 阅读与恢复
+
+- [独立试错经验](docs/LESSONS_LEARNED.md)
+- [全过程与软件](docs/PROCESS.md)
+- [iPad 改进的实现](docs/ADAPTATIONS.md)
+- [版本试错沿革](docs/CHANGELOG.md)
+- [实测范围与已知限制](docs/VALIDATION.md)
+- [构建、恢复和更新](docs/BUILD_AND_UPDATE.md)
+- [签名组件源码说明](docs/SIGNING_SOURCE.md)
+- [来源与许可](THIRD_PARTY_NOTICES.md)
+
+`src/` 保存最终模块源码，`update-kit-v21/` 保存两份无个人签名的兼容模块和 SHA-256 清单。`tools/` 提供编译、受版本约束的更新打包和归档校验入口。签名组件对应源码以独立 ZIP 放在 `packages/`。
+
+仓库的恢复入口是用户私下保存的、已转换且兼容的无签名 IPA，以及用户自己的游戏资源。先运行 `python tools/verify_archive.py`。归档中不含游戏可执行文件、游戏资源/DLC/着色器/图标、完整IPA、Apple SDK、存档、Apple账号、私钥、个人证书/profile、设备配对或原始日志。
+
+原创适配部分采用 MIT。上游兼容层和手柄代码沿用其 MIT 归属，签名组件各自按 MIT/LGPL-2.1-or-later 开放。游戏、商标及图标归各自权利人。项目与 Apple、CD PROJEKT RED、iLoader 维护者无官方关联。

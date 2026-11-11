@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "build": "2026111103",
+  "game_version": "Mac 2.5.0",
+  "host_executable_sha256": "c55c31b1d36af8f01c529679e40d89020fe66eee90f54cfcb2e98346e8e6bf88",
+  "hdr_query_return_offset": 72044408,
+  "files": {
+    "Frameworks/libShim_AppKit.dylib": "705861f5bc3ece924c2b491c35ba2de896f72131c30bdadedac7760c22f4a85e",
+    "Frameworks/libShim_CoreGraphics.dylib": "b80a93d886c15e078bfbe34a20a0ac9f9ee53f1c4db038cad536d16b1752c561"
+  },
+  "unsigned_modules": true,
+  "standalone_app": false
+}
